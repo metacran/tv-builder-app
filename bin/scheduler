@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+var debug = require('debug')('tv-builder-app');
+var scheduler = require('../scheduler');
+scheduler()
