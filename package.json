@@ -6,10 +6,11 @@
     "start": "node ./bin/scheduler"
   },
   "dependencies": {
-    "debug": "~2.2.0",
     "amqplib": "~0.3.2",
-    "nano": "~6.1.2",
+    "async": "^1.0.0",
+    "cheerio": "~0.19.0",
+    "debug": "~2.2.0",
     "got": "~3.2.0",
-    "cheerio": "~0.19.0"
+    "nano": "~6.1.2"
   }
 }
