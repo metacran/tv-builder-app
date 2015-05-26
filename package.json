@@ -5,6 +5,9 @@
   "scripts": {
     "start": "node ./bin/scheduler"
   },
+  "engines": {
+    "node": "0.12.x"
+  },
   "dependencies": {
     "amqplib": "~0.3.2",
     "async": "^1.0.0",
