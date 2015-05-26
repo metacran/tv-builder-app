@@ -39,7 +39,10 @@ function run() {
 
 		    var $ = cheerio.load(data);
 
-		    async.parallel(
+		    // We can't run this in parallel, because 'links' needs
+		    // the old version of the TV from the DB, so we can't update
+		    // it in 'doc' until it gets that
+		    async.series(
 			{
 			    'links': function(cb) {
 				add_tv_links(tv, $, function(e, r) { cb(e, r) }) },
